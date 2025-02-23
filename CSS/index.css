@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container .row .product:hover{
+    border: 1px solid rgb(60, 60, 186);
+    border-radius: 15px;
+    cursor: pointer;
+}
+#updatebtn{
+    display: none;
+}
+h2 span{
+    background-color: rgb(222, 232, 108);
+}

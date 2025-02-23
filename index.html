@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="shortcut icon" href="image/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+    <div class="div w-75 m-auto my-4 shadow-lg p-4 rounded-3">
+        <h1 class="fs-2 text-center mb-3 text-secondary">CRUDs System</h1>
+        <input id="productName" type="text" class="form-control mb-2" placeholder="Enter Product Name..">
+        <input id="productCategory" type="text" class="form-control mb-2" placeholder="Enter Category Name..">
+        <input id="productPrice" type="number" class="form-control mb-2" placeholder="Enter Product Price..">
+        <textarea id="productDescription" class="form-control mb-2" placeholder="Type Product Description.."></textarea>
+        <input id="productIMG" type="file" class="form-control mb-2">
+        <button id="addbtn" class="btn btn-primary my-2" onclick="addProduct()">Add Product</button>
+        <button id="updatebtn" class="btn btn-success my-3" onclick="updateProduct()">Update Product</button>
+        <input type="text" class="form-control my-2 border-2" placeholder="Search.." id="search" onkeyup="search(this.value)" >
+    </div>
+
+    <div class="container mb-5">
+        <div class="row  d-flex" id="ProductInfo">
+            
+        </div>
+    </div>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
